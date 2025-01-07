@@ -1,0 +1,31 @@
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#product-list li {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#product-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* Зменшення розміру зображень */
+img {
+    max-width: 5%; /* Зображення не перевищує ширину батьківського елемента */
+    height: auto;   /* Пропорційна висота */
+}
+
+.categories-list img {
+    width: 50px;   /* Фіксована ширина для категорій */
+    height: auto;   /* Автоматична висота */
+}
+
